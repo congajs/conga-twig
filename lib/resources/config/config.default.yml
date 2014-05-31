@@ -1,0 +1,9 @@
+twig:
+
+    options:
+        strict_variables: false
+        #self: false
+        #locals:
+        #debug: false
+        #compileDebug: false
+        #pretty: false

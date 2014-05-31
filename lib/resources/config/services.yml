@@ -1,0 +1,10 @@
+parameters:
+    twig.handler.constructor: conga-twig:twig
+
+services:
+
+    twig.handler:
+        constructor: "%twig.handler.constructor%"
+        arguments: []
+        tags:
+            - { name: app.view.configuration, method: onConfigureViewEngine }

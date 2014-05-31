@@ -1,0 +1,33 @@
+{
+  "name": "conga-twig",
+  "version": "0.0.1",
+  "description": "Conga.js bundle which integrates the twig.js template engine",
+  "directories": {
+    "test": "test"
+  },
+  "main": "",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/congajs/conga-twig.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Anthony Matarazzo"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "twig": "0.7.1"
+  },
+  "devDependencies": {},
+  "readmeFilename": "README.md",
+  "readme": "conga-twig\n==========\n\nOverview\n--------\n\nThis is a bundle for the [Conga.js](https://github.com/congajs/conga) framework which \nintegrates the [twig.js Template Engine](https://github.com/justjohn/twig.js) into a project.\n\nConfiguration\n-------------\n\nExample:\n\n    // config.yml\n    twig:\n\n        options:\n            strict_variables: false\n\nUsage\n-----\n\n// @todo",
+  "bugs": {
+    "url": "https://github.com/congajs/conga-twig/issues"
+  },
+  "homepage": "https://github.com/congajs/conga-twig",
+  "_id": "conga-twig@0.0.1",
+  "_from": "conga-twig@latest"
+}
