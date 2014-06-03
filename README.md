@@ -93,7 +93,8 @@ Built-In Tags:
 Assets {% assets %} allows you to interact with conga-assets from within twig.  In the development environment, all files will be printed one by one, but in production or test only the single roll up file will be printed.  The syntax is as follows:
 
 	{% assets "/rollup/file", "file_type", ["list", "of", "files"] %}
-		For each file being returned, this data is parsed for you.  You have access to each URL as {{ url }}
+		For each file being returned, this data is parsed for you.
+		You have access to each URL as {{ url }}
 	{% endassets %}
 
 The allowed file types are
