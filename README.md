@@ -72,16 +72,12 @@ Consider extending this file with your controller action's view located at, root
 	{% set title = "This is my title" %}
 
 	{% block stylesheets %}
-
 		{% assets "/css/all.css", "css", [
 			"/css/lib/something.css",
 			"/bundles/some-bundle/css/*"
 		] %}
-
 			<link rel="stylesheet" href="{{ url }}" />
-
 		{% endassets %}
-
 	{% endblock %}
 
 	{% block content %}
