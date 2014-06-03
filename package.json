@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git://github.com/congajs/conga-twig.git"
   },
-  "keywords": [],
+  "keywords": [
+  	"twig",
+	"conga-twig",
+	"template",
+	"conga"
+  ],
   "author": {
     "name": "Anthony Matarazzo"
   },
