@@ -1,7 +1,14 @@
 parameters:
+    twig.listener.constructor: conga-twig:twig
     twig.handler.constructor: conga-twig:twig
 
 services:
+
+    # the twig kernel listener
+    twig.listener:
+        constructor: %twig.listener.constructor%
+        tags:
+            - { name: app.middleware, method: onAddMiddleware, priority: 1001 }
 
     twig.handler:
         constructor: "%twig.handler.constructor%"
