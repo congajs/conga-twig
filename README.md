@@ -100,3 +100,29 @@ The allowed file types are
 
 	javascript
 	css
+
+Custom tags are available for you to define through the service container.
+
+    # services.yml - My Custom Tag
+    custom.twig.tag:
+        constructor: "my-bundle:custom/twig/tag"
+        arguments: []
+        tags:
+            - { name: twig.tag, method: registerTag }
+
+
+
+	# /custom/twig/tag.js
+	function CustomTwigTag() { }
+
+	CustomTwigTag.prototype.registerTag = function(container, Twig) {
+
+		Twig.registerTag({
+			/* ... your logic ... */
+		});
+
+	};
+
+	module.exports = CustomTwigTag;
+
+For more information about registering custom tags, see [Extending TwigJS With Custom Tags](https://github.com/justjohn/twig.js/wiki/Extending-twig.js-With-Custom-Tags)
