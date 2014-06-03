@@ -14,7 +14,7 @@ services:
         constructor: %twig.listener.constructor%
         tags:
             - { name: kernel.event, event: kernel.compile, method: onKernelCompile }
-            - { name: app.middleware, method: onAddMiddleware, priority: 1001 }
+            - { name: app.middleware, method: onAddMiddleware, priority: 1000 }
 
     # the twig handler service
     twig.handler:
