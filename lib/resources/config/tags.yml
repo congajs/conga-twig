@@ -1,0 +1,12 @@
+parameters:
+    twig.tag.assets.constructor: conga-twig:tags/twig.tag.assets
+
+services:
+
+    # The assets tag
+    twig.tag.assets:
+        constructor: "%twig.tag.assets.constructor%"
+        arguments: []
+        tags:
+            - { name: twig.tag, method: registerTag }
+            - { name: app.middleware, method: onAddMiddleware, priority: 1001 }

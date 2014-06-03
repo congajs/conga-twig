@@ -1,3 +1,8 @@
+imports:
+    - { resource : tags.yml }
+    #- { resource : functions.yml }
+    #- { resource : filters.yml }
+
 parameters:
     twig.listener.constructor: conga-twig:twig
     twig.handler.constructor: conga-twig:twig
@@ -8,8 +13,10 @@ services:
     twig.listener:
         constructor: %twig.listener.constructor%
         tags:
+            - { name: kernel.event, event: kernel.compile, method: onKernelCompile }
             - { name: app.middleware, method: onAddMiddleware, priority: 1001 }
 
+    # the twig handler service
     twig.handler:
         constructor: "%twig.handler.constructor%"
         arguments: []
