@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "twig": "0.7.1"
+    "twig": "*"
   },
   "devDependencies": {},
   "readmeFilename": "README.md",
