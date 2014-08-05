@@ -8,5 +8,5 @@ services:
         constructor: "%twig.tag.assets.constructor%"
         arguments: []
         tags:
-            - { name: twig.tag, method: registerTag }
+            - { name: twig.tag, method: register }
             - { name: app.middleware, method: onAddMiddleware, priority: 1001 }

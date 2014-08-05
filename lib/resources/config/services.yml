@@ -21,4 +21,4 @@ services:
         constructor: "%twig.handler.constructor%"
         arguments: []
         tags:
-            - { name: app.view.configuration, method: onConfigureViewEngine }
+            - { name: app.view.configuration, method: onConfigureViewEngine}
