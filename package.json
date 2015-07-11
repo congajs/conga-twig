@@ -1,6 +1,6 @@
 {
   "name": "conga-twig",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Conga.js bundle which integrates the twig.js template engine",
   "directories": {
     "test": "test"
@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "dependencies": {
-	"twig": "git+ssh://git@github.com:createvibe/twig.js.git" ,
+	"twig": "*" ,
 	"async": "*"
   },
   "devDependencies": {},
