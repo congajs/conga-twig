@@ -1,5 +1,5 @@
 parameters:
-    twig.tag.assets.constructor: conga-twig:tags/twig.tag.assets
+    twig.tag.assets.constructor: "@conga/conga-twig:tags/twig.tag.assets"
 
 services:
 
