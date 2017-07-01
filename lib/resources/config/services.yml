@@ -4,8 +4,8 @@ imports:
     #- { resource : filters.yml }
 
 parameters:
-    twig.listener.constructor: "@conga/conga-twig:twig"
-    twig.handler.constructor: "@conga/conga-twig:twig"
+    twig.listener.constructor: "@conga/framework-view-twig:TwigViewManager"
+    twig.handler.constructor: "@conga/framework-view-twig:TwigViewManager"
 
 services:
 

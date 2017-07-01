@@ -1,5 +1,5 @@
 {
-  "name": "@conga/conga-twig",
+  "name": "@conga/framework-view-twig",
   "version": "2.0.0-dev",
   "description": "Conga.js bundle which integrates the twig.js template engine",
   "directories": {
@@ -22,6 +22,12 @@
   "author": {
     "name": "Anthony Matarazzo"
   },
+  "contributors": [
+    {
+      "name": "Marc Roulias",
+      "email": "marc@lampjunkie.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
 	"twig": "1.10.5",
@@ -29,7 +35,6 @@
   },
   "devDependencies": {},
   "readmeFilename": "README.md",
-  "readme": "conga-twig\n==========\n\nOverview\n--------\n\nThis is a bundle for the [Conga.js](https://github.com/congajs/conga) framework which \nintegrates the [twig.js Template Engine](https://github.com/justjohn/twig.js) into a project.\n\nConfiguration\n-------------\n\nExample:\n\n    // config.yml\n    twig:\n\n        options:\n            strict_variables: false\n\nUsage\n-----\n\n// @todo",
   "bugs": {
     "url": "https://github.com/congajs/conga-twig/issues"
   },
