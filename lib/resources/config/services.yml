@@ -3,21 +3,11 @@ imports:
     #- { resource : functions.yml }
     #- { resource : filters.yml }
 
-parameters:
-    twig.listener.constructor: "@conga/framework-view-twig:TwigViewManager"
-    twig.handler.constructor: "@conga/framework-view-twig:TwigViewManager"
-
 services:
 
-    # the twig kernel listener
-    twig.listener:
-        constructor: "%twig.listener.constructor%"
+    # the twig handler
+    twig.handler:
+        constructor: "@conga/framework-view-twig:TwigViewManager"
         tags:
             - { name: kernel.event, event: kernel.compile, method: onKernelCompile }
-
-    # the twig handler service
-    twig.handler:
-        constructor: "%twig.handler.constructor%"
-        arguments: []
-        tags:
-            - { name: app.view.configuration, method: onConfigureViewEngine}
+            - { name: app.view.configuration, method: onConfigureViewEngine }

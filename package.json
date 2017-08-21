@@ -14,13 +14,14 @@
     "url": "git://github.com/congajs/conga-twig.git"
   },
   "keywords": [
-  	"twig",
-	"conga-twig",
-	"template",
-	"conga"
+    "twig",
+    "conga-twig",
+    "template",
+    "conga"
   ],
   "author": {
-    "name": "Anthony Matarazzo"
+    "name": "Anthony Matarazzo",
+    "email": "email@anthonymatarazzo.com"
   },
   "contributors": [
     {
@@ -30,8 +31,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-	"twig": "1.10.5",
-	"async": "2.4.1"
+    "twig": "^1.10.5",
+    "async": "2.4.1"
   },
   "devDependencies": {},
   "readmeFilename": "README.md",
