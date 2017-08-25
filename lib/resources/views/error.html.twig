@@ -1,0 +1,33 @@
+<h1>Happy day!  You found an error!!</h1>
+
+<p>CongaJS likes to look at the bright side of things.</p>
+
+<h3>{{ error.message }}</h3>
+
+{% if error.originalError is defined %}
+    <fieldset>
+        <legend>Original Error</legend>
+        <dl>
+            <dt>Status</dt>
+            <dd>{{ error.originalError.status|default('500') }}</dd>
+        </dl>
+        <dl>
+            <dt>Message</dt>
+            <dd>{{ error.originalError.message|default('') }}</dd>
+        </dl>
+        {% if error.originalError.stack is defined %}
+            <dl>
+                <dt>Stack Trace:</dt>
+                <dd>
+                    <pre>{{ error.originalError.stack }}</pre>
+                </dd>
+            </dl>
+        {% endif %}
+        {% if error.originalError.previousError is defined %}
+            <dl>
+                <dt>Previous Error:</dt>
+                <dd>{{ error.originalError.previousMessage|default('') }}</dd>
+            </dl>
+        {% endif %}
+    </fieldset>
+{% endif %}
