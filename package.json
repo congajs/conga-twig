@@ -34,7 +34,9 @@
     "twig": "^1.10.5",
     "async": "2.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@conga/framework-profiler": "congajs/conga-profiler"
+  },
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/congajs/conga-twig/issues"

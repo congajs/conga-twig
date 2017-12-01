@@ -7,3 +7,10 @@ twig:
         #debug: false
         #compileDebug: false
         #pretty: false
+
+    profiler:
+        enabled: true
+        capture:
+            source: true
+            context: true
+            parameters: true

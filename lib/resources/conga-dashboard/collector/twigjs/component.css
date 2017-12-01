@@ -1,0 +1,25 @@
+#twigjs-collector pre {
+    padding: 0;
+}
+
+#twigjs-collector .body {
+    padding-top: 30px;
+}
+
+#twigjs-collector .error-card {
+    margin-bottom: 30px;
+}
+
+#twigjs-collector .card.collapsable .card-header {
+    cursor: pointer;
+}
+
+#twigjs-collector .card.collapsable .card-header {
+    background-color: whitesmoke;
+}
+#twigjs-collector .card.collapsable .card-header-title .content {
+    padding-left: 15px;
+}
+#twigjs-collector .card.collapsable .card-header:hover .card-header-title .content {
+    text-decoration: underline;
+}

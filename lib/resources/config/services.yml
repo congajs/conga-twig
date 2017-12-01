@@ -11,3 +11,10 @@ services:
         tags:
             - { name: kernel.event, event: kernel.compile, method: onKernelCompile }
             - { name: app.view.configuration, method: onConfigureViewEngine }
+
+    # twig data collector
+    twig.collector:
+        constructor: "@conga/framework-view-twig:collector/TwigDataCollector"
+        arguments: ["@service_container"]
+        tags:
+            - { name: profiler.data_collector }
