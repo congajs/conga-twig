@@ -1,4 +1,4 @@
-@conga/framework-view-twig
+@conga/framework-view-twig [![Build Status](https://secure.travis-ci.org/congajs/conga-view.png)](http://travis-ci.org/congajs/conga-view)
 ==========================
 
 Overview
