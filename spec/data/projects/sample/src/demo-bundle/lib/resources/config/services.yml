@@ -1,0 +1,11 @@
+services:
+
+    twig.tag.test:
+        constructor: demo-bundle:twig/TestTag
+        tags:
+            - { name: twig.tag, method: register }
+
+    twig.filter.test:
+        constructor: demo-bundle:twig/TestFilter
+        tags:
+            - { name: twig.filter, method: register }

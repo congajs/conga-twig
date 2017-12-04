@@ -7,7 +7,7 @@
   },
   "main": "",
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "./node_modules/jasmine/bin/jasmine.js"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,10 @@
     "async": "2.4.1"
   },
   "devDependencies": {
-    "@conga/framework-profiler": "congajs/conga-profiler"
+    "@conga/framework": "^2.0.1",
+    "@conga/framework-profiler": "congajs/conga-profiler",
+    "jasmine": "^2.6.0",
+    "request": "^2.81.0"
   },
   "readmeFilename": "README.md",
   "bugs": {

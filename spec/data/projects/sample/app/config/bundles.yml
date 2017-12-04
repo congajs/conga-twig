@@ -1,0 +1,10 @@
+# bundles to enable
+bundles:
+
+    all:
+
+        # project bundles (from src/ directory)
+        - demo-bundle
+
+        - "@conga/framework-view"
+        - "@conga/framework-view-twig"
