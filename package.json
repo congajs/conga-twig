@@ -1,6 +1,6 @@
 {
   "name": "@conga/framework-view-twig",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Conga.js bundle which integrates the twig.js template engine",
   "directories": {
     "test": "test"
