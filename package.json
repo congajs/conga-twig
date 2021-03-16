@@ -1,6 +1,6 @@
 {
   "name": "@conga/framework-view-twig",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "Conga.js bundle which integrates the twig.js template engine",
   "directories": {
     "test": "test"
@@ -31,14 +31,14 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "twig": "^1.10.5",
-    "async": "2.4.1"
+    "twig": "~1.13.3",
+    "async": "^3.2.0"
   },
   "devDependencies": {
-    "@conga/framework": "^2.0.1",
+    "@conga/framework": "^2.1.2",
     "@conga/framework-profiler": "congajs/conga-profiler",
-    "jasmine": "^2.6.0",
-    "request": "^2.81.0"
+    "jasmine": "^3.6.4",
+    "request": "^2.88.2"
   },
   "readmeFilename": "README.md",
   "bugs": {
